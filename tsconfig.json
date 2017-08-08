@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "noImplicitAny": true,
+        "removeComments": false,
+        "preserveConstEnums": true,
+        "declaration": true,
+        "sourceMap": true,
+        "outDir": "./dist",
+        "target": "es5",
+        "strictNullChecks": true
+    },
+    "files": [
+        "./src/index.ts"
+    ]
+}

@@ -1,0 +1,66 @@
+{
+  "name": "dnn",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/index.js",
+  "scripts": {
+    "test": "mocha",
+    "cover": "nyc mocha",
+    "build": "rimraf ./dist && tsc",
+    "lint": "tslint ./src/**/*.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lochbrunner/dnn-js.git"
+  },
+  "keywords": [
+    "Dnn"
+  ],
+  "author": "Matthias Lochbrunner",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lochbrunner/dnn-js/issues"
+  },
+  "homepage": "https://github.com/lochbrunner/dnn-js#readme",
+  "devDependencies": {
+    "@types/chai": "^4.0.2",
+    "@types/lodash": "^4.14.71",
+    "@types/mocha": "^2.2.41",
+    "chai": "^4.1.1",
+    "mocha": "^3.5.0",
+    "rimraf": "^2.6.1",
+    "source-map-support": "^0.4.15",
+    "tslint": "^5.5.0",
+    "typescript": "^2.4.2"
+  },
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "nyc": "^11.1.0",
+    "ts-node": "^3.3.0"
+  },
+  "nyc": {
+    "extension": [
+      ".ts",
+      ".tsx"
+    ],
+    "coverageReporter": {
+      "includeAllSources": true
+    },
+    "all": true,
+    "reporter": [
+      "lcov",
+      "text",
+      "html"
+    ],
+    "include": [
+      "**/*.ts"
+    ],
+    "exclude": [
+      "**/*.d.ts",
+      "**/*.spec.ts"
+    ],
+    "require": [
+      "ts-node/register"
+    ]
+  }
+}
