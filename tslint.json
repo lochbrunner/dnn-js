@@ -37,6 +37,14 @@
             "spaces",
             4
         ],
-        "no-consecutive-blank-lines": true
+        "no-consecutive-blank-lines": true,
+        "linebreak-style": [
+            true,
+            "LF"
+        ],
+        "jsdoc-format": true,
+        "trailing-comma": [
+            true
+        ]
     }
 }

@@ -8,7 +8,9 @@
         "sourceMap": true,
         "outDir": "./dist",
         "target": "es5",
-        "strictNullChecks": true
+        "strictNullChecks": true,
+        "strict": true,
+        "pretty": true
     },
     "files": [
         "./src/index.ts"
