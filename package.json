@@ -30,7 +30,7 @@
     "@types/lodash": "^4.14.71",
     "@types/mocha": "^2.2.41",
     "chai": "^4.1.1",
-    "mocha": "^3.5.0",
+    "mocha": "^6.2.2",
     "node-ts": "^2.1.2",
     "rimraf": "^2.6.1",
     "source-map-support": "^0.4.15",
